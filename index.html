@@ -3,9 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link href='css/main.css' rel='stylesheet' type='text/css' />
+    <link rel='icon' href='assets/images/logo.png' />
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,800" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
-
+    <!--  HEADER  -->
+    <header class='banner'>
+      <img class='logo' src='assets/images/logo-laboratoria.png' />
+    </header>
+    <!-- SIDEBAR -->
+    <aside class='sidebar'>
+      <h2>Escolha abaixo a Sede e a Turma</h2>
+      <select class='menu' id='drop-menu'></select>
+      <select class='menu' id='menu-geracao'></select>
+    </aside>
+    <!-- CONTENT -->
+    <div class='content'>
+      <section class='content-header'>
+        <h1>Data Dashboard
+          <small>Versão 1.0</small>
+        </h1>
+      </section>
+      <section class='container'>
+        <!--MOSTRA  INFORMAÇÕES NA TELA -->
+        <div class='row'>
+          <div class='col-chart'>
+            <div class='box-chart box1'> <!-- GRAFICO GOOGLE -->
+            </div>
+            <div class='box-chart2 box2'> <!-- GRAFICO GOOGLE -->
+            </div>
+          </div>
+          <div class='col-chart'>
+            <div class='box-chart3 box1'>
+            </div>
+            <div class='box-chart4 box2'> <!-- GRAFICO GOOGLE -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->

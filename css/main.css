@@ -1,3 +1,181 @@
-/*
- * Estilos de tu proyecto
+/**
+* CORES UTLILIZADAS: #FFE621;
+                     #56F89A;
+                     #FF009E;
+                     #6666; 
+                     #3333; 
  */
+
+/* CLASSES REUTILIZAVEIS */
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:before, :after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  content: '';
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+}
+
+a, ul, li, h1, h2, h3, h4, h5, h6{
+  font-family: 'Bitter', serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* BANNER */
+header.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  background-color: #FFE521;
+  border-bottom: 1px solid #3333;
+}
+
+.logo{
+  width: 25%;
+  height: auto;
+}
+
+/* SIDEBAR */
+aside{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 100px !important;
+  padding: 0 15px;
+  height: 100%;
+  width: 230px;
+  z-index: 810;
+}
+
+.menu{
+  position: relative;
+  line-height: 46px;
+  width: 195px;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 25px;
+}
+
+/* CONTENT */
+.content{
+  min-height: 590px;
+  height: 100%;
+  padding-top: 1px;
+  margin-left: 230px;
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
+  z-index: 800;
+}
+
+.content-header{
+  position: relative;
+  padding: 15px 15px 0 15px;
+}
+
+h1{
+  margin: 0;
+  font-size: 28px;
+}
+
+small{
+  display: inline-block;
+  margin-left: 10px;
+  color: #6666;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.container{
+  min-height: 250px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 800;
+}
+
+.row{
+  display: table;
+  width: 100%;
+}
+
+.col{
+  position: relative;
+  width: 20%;
+  min-height: 1px;
+  float: left;
+  padding: 0 15px;
+}
+
+/* PRINTA INFORMAÇÕES NA TELA */
+.col-chart{
+  width: 50%;
+  float: left;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.box-chart, .box-chart2, .box-chart3, .box-chart4{
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+  content: '';
+}
+
+.box1{
+  border-top: 3px solid #FF009E;
+}
+
+.box2{
+  border-top: 3px solid #56F89A;
+}
+
+h2{
+  font-size: 22px;
+  margin-top: 0 !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.sede{
+  text-align: left;
+}
+
+.sub{
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.info{
+  flex-direction: column;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 0 !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
